@@ -10,7 +10,7 @@ arch=('i686')
 url="https://www.geshl2.com/"
 license=('GPLv3')
 makedepends=('cmake' 'boost-libs' 'boost' 'git' 'gcc' 'glibc' 'libstdc++5')
-source=('ges-git::git+https://github.com/ElectricPrism/ges-code.git'
+source=('ges-git::git+https://github.com/goldeneye-source/ges-code.git'
 	'python::git+https://github.com/python-cmake-buildsystem/python-cmake-buildsystem.git')
 sha256sums=('SKIP'
 	    'SKIP')
