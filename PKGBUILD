@@ -7,7 +7,8 @@ pkgdesc="Multiplayer Only FPS. A recreation of GoldenEye64 as a Half-Life 2 mod 
 arch=('i686')
 url="https://www.geshl2.com/"
 license=('GPLv3')
-makedepends=('cmake' 'boost-libs' 'boost' 'git' 'gcc' 'glibc' 'libstdc++5')
+makedepends=('cmake' 'boost-libs' 'boost' 'git' 'gcc' 
+	     'glibc' 'libstdc++5' 'zlib')
 source=('ges-git::git+https://github.com/goldeneye-source/ges-code.git'
 	'python::git+https://github.com/python-cmake-buildsystem/python-cmake-buildsystem.git')
 sha256sums=('SKIP'
@@ -45,18 +46,8 @@ build()
 {
 
   cd "${pkgname}/build"
- 
-  # Cannot use system zlib/expat, as it will fail the build  using Arch Linux copies
-  # We must use the builded copy that is built
-  # Replace this with a patch later
-  echo "set(_use_system_zlib_default OFF)" >> "$srcdir/cmake/ges_python.cmake"
 
-  # review 
-  less "$srcdir/cmake/ges_python.cmake"
- 
-  cmake \
-  	-DCMAKE_INSTALL_PREFIX=${HOME}/.local/share/Steam/steamapps/sourcemods/gesource
-	..
+  cmake -DCMAKE_INSTALL_PREFIX=${HOME}/.local/share/Steam/steamapps/sourcemods/gesource	..
   make
   make DESTDIR="${pkgdir}" install
 
