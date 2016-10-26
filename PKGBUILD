@@ -25,11 +25,11 @@ prepare()
 {
 
   # Possible conflicts with system libs?
-  echo "set(USE_SYSTEM_ZLIB OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgdir/cmake/ges_python.cmake"
-  echo "set(USE_SYSTEM_SQLITE3 OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgdir/cmake/ges_python.cmake"
+  echo "set(USE_SYSTEM_ZLIB OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgname/cmake/ges_python.cmake"
+  echo "set(USE_SYSTEM_SQLITE3 OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgname/cmake/ges_python.cmake"
 
   # output ges_python.cmake for build log
-  cat "$srcdir/$pkgdir/cmake/ges_python.cmake"
+  cat "$srcdir/$pkgname/cmake/ges_python.cmake"
 
   # Enter Package Source
   cd "${pkgname}"
