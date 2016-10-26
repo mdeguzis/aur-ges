@@ -39,14 +39,14 @@ prepare()
 		rm -rf build
 	fi
 
-  mkdir build
+ 	mkdir build
 
 }
 
 build()
 {
 
-	cd "${srcdir}/${pkgname}/build"
+	cd "${pkgname}/build"
 	cmake -DCMAKE_INSTALL_PREFIX=${HOME}/.local/share/Steam/steamapps/sourcemods/gesource ..
 	make -C build
 	make DESTDIR="${pkgdir}" install -C build
