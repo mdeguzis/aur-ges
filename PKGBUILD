@@ -5,11 +5,11 @@
 pkgname=ges-git
 pkgver=5.0.99
 pkgrel=1
-pkgdesc='Multiplayer Only FPS. A recreation of GoldenEye64 as a Half-Life 2 mod using Source Engine SDK 2013.'
+pkgdesc="Multiplayer Only FPS. A recreation of GoldenEye64 as a Half-Life 2 mod using Source Engine SDK 2013."
 arch=('i686')
-url='https://www.geshl2.com/'
+url="https://www.geshl2.com/"
 license=('GPLv3')
-makedepends=( 'cmake' 'boost-libs' 'boost' 'gcc' 'glibc' 'libstdc++5')
+makedepends=('cmake' 'boost-libs' 'boost' 'gcc' 'glibc' 'libstdc++5')
 source=('ges-git::git+https://github.com/ElectricPrism/ges-code.git'
 				'python::git+https://github.com/python-cmake-buildsystem/python-cmake-buildsystem.git')
 sha256sums=('SKIP'
@@ -31,13 +31,13 @@ prepare()
 
 	# Init submodules
 	git submodule init
-	git config submodule.python.url thirdparty/pytho
+	git config submodule.python.url thirdparty/python
 	git submodule update
 
 	# Setup build environment
 	if [[ -d build ]]; then
 		rm -rf build
-  fi
+	fi
 
   mkdir build
 
@@ -46,7 +46,7 @@ prepare()
 build()
 {
 
-	cd "${srcdir}/${pkgname}/build
+	cd "${srcdir}/${pkgname}/build"
 	cmake -DCMAKE_INSTALL_PREFIX=${HOME}/.local/share/Steam/steamapps/sourcemods/gesource ..
 	make -C build
 	make DESTDIR="${pkgdir}" install -C build
