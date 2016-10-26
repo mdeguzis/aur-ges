@@ -11,9 +11,9 @@ url="https://www.geshl2.com/"
 license=('GPLv3')
 makedepends=('cmake' 'boost-libs' 'boost' 'git' 'gcc' 'glibc' 'libstdc++5')
 source=('ges-git::git+https://github.com/ElectricPrism/ges-code.git'
-				'python::git+https://github.com/python-cmake-buildsystem/python-cmake-buildsystem.git')
+	'python::git+https://github.com/python-cmake-buildsystem/python-cmake-buildsystem.git')
 sha256sums=('SKIP'
-						'SKIP')
+	    'SKIP')
 provides=('ges-git')
 conflicts=('ges')
 
@@ -27,12 +27,12 @@ prepare()
 {
 
 	# Enter Package Source
-	cd "${srcdir}/${pkgname}"
+	cd "${pkgname}"
 
 	# Init submodules
-	git submodule init
-	git config submodule.python.url thirdparty/python
-	git submodule update
+	git submodule init thirdpart/python
+	git config submodule.python.url ../python
+	git submodule update thirdpart/python
 
 	# Setup build environment
 	if [[ -d build ]]; then
