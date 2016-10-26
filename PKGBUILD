@@ -19,45 +19,46 @@ conflicts=('ges')
 
 pkgver() {
 
-  cd "$pkgname"
+  cd "${pkgname}"
   printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 
 }
 prepare()
 {
 
-	# Enter Package Source
-	cd "${pkgname}"
+  # Enter Package Source
+  cd "${pkgname}"
 
-	# Init submodules
-	git submodule init thirdparty/python
-	git config submodule.python.url ../python
-	git submodule update thirdparty/python
+  # Init submodules
+  git submodule init thirdparty/python
+  git config submodule.python.url ../python
+  git submodule update thirdparty/python
 
-	# Setup build environment
-	if [[ -d build ]]; then
-		rm -rf build
-	fi
+  # Setup build environment
+  if [[ -d build ]]; then
+  	rm -rf build
+  fi
 
- 	mkdir build
+  mkdir build
 
 }
 
 build()
 {
 
-	cd "${pkgname}/build"
-	cmake -DCMAKE_INSTALL_PREFIX=${HOME}/.local/share/Steam/steamapps/sourcemods/gesource ..
-	make -C build
-	make DESTDIR="${pkgdir}" install -C build
+  cd "${pkgname}/build"
+  cmake -DCMAKE_INSTALL_PREFIX=${HOME}/.local/share/Steam/steamapps/sourcemods/gesource ..
+  make
+  make DESTDIR="${pkgdir}" install
 
 }
 
 package()
 {
 
-	# TODO
-	cd "${srcdir}/${pkgname}/build"
-	install -m 755 client.so "${pkgdir}"/usr/bin/
-	install -m 755 server.so "${pkgdir}"/usr/bin/
+  # TODO
+  cd "${srcdir}/${pkgname}/build"
+  install -m 755 client.so "${pkgdir}"/usr/bin/
+  install -m 755 server.so "${pkgdir}"/usr/bin/
+
 }
