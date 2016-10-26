@@ -45,10 +45,13 @@ build()
 {
 
   cd "${pkgname}/build"
+ 
+  # Cannot use system zlib/expat, as it will fail the build  using Arch Linux copies
+  # We must use the builded copy that is built
   cmake \
   	-DCMAKE_INSTALL_PREFIX=${HOME}/.local/share/Steam/steamapps/sourcemods/gesource \
-	USE_SYSTEM_EXPAT=OFF \
-	USE_SYSTEM_ZLIB=OFF \
+	-DUSE_SYSTEM_EXPAT=OFF \
+	-DUSE_SYSTEM_ZLIB=OFF \
 	..
   make
   make DESTDIR="${pkgdir}" install
