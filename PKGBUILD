@@ -48,10 +48,14 @@ build()
  
   # Cannot use system zlib/expat, as it will fail the build  using Arch Linux copies
   # We must use the builded copy that is built
+  # Replace this with a patch later
+  echo "set(_use_system_zlib_default OFF)" >> "$srcdir/cmake/ges_python.cmake"
+
+  # review 
+  less "$srcdir/cmake/ges_python.cmake"
+ 
   cmake \
-  	-DCMAKE_INSTALL_PREFIX=${HOME}/.local/share/Steam/steamapps/sourcemods/gesource \
-	-DUSE_SYSTEM_EXPAT=OFF \
-	-DUSE_SYSTEM_ZLIB=OFF \
+  	-DCMAKE_INSTALL_PREFIX=${HOME}/.local/share/Steam/steamapps/sourcemods/gesource
 	..
   make
   make DESTDIR="${pkgdir}" install
