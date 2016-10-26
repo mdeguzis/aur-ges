@@ -30,9 +30,9 @@ prepare()
 	cd "${pkgname}"
 
 	# Init submodules
-	git submodule init thirdpart/python
+	git submodule init thirdparty/python
 	git config submodule.python.url ../python
-	git submodule update thirdpart/python
+	git submodule update thirdparty/python
 
 	# Setup build environment
 	if [[ -d build ]]; then
