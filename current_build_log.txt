@@ -1,0 +1,1426 @@
+==> Creating clean working copy [mikeyd]...done
+==> Making package: ges-git 5.0.99-1 (Wed Oct 26 15:41:23 EDT 2016)
+==> Retrieving sources...
+  -> Updating ges-git git repo...
+Fetching origin
+  -> Updating python git repo...
+Fetching origin
+==> Validating source files with sha256sums...
+    ges-git ... Skipped
+    python ... Skipped
+==> Making package: ges-git 5.0.99-1 (Wed Oct 26 15:41:24 EDT 2016)
+==> Checking runtime dependencies...
+==> Checking buildtime dependencies...
+==> Installing missing dependencies...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (10) icu-57.1-1  jsoncpp-1.7.7-1  libxml2-2.9.4+4+g3169602-1  perl-error-0.17024-1  shared-mime-info-1.7-1  boost-1.61.0-2  boost-libs-1.61.0-2  cmake-3.6.2-2  git-2.10.1-1  libstdc++5-3.3.6-5
+
+Total Installed Size:  255.01 MiB
+
+:: Proceed with installation? [Y/n] 
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+installing libxml2...
+installing shared-mime-info...
+installing jsoncpp...
+installing cmake...
+Optional dependencies for cmake
+    qt5-base: cmake-gui
+    libxkbcommon-x11: cmake-gui
+installing icu...
+installing boost-libs...
+Optional dependencies for boost-libs
+    openmpi: for mpi support
+installing boost...
+Optional dependencies for boost
+    python: for python bindings
+    python2: for python2 bindings
+installing perl-error...
+installing git...
+Optional dependencies for git
+    tk: gitk and git gui
+    perl-libwww: git svn
+    perl-term-readkey: git svn
+    perl-mime-tools: git send-email
+    perl-net-smtp-ssl: git send-email TLS support
+    perl-authen-sasl: git send-email TLS support
+    python2: various helper scripts
+    subversion: git svn
+    cvsps2: git cvsimport
+    gnome-keyring: GNOME keyring credential helper
+installing libstdc++5...
+:: Running post-transaction hooks...
+(1/1) Updating the MIME type database...
+==> Retrieving sources...
+==> Validating source files with sha256sums...
+    ges-git ... Skipped
+    python ... Skipped
+==> Extracting sources...
+  -> Creating working copy of ges-code git repo...
+Cloning into 'ges-git'...
+done.
+Checking out files:  49% (2207/4490)   
+Checking out files:  50% (2245/4490)   
+Checking out files:  51% (2290/4490)   
+Checking out files:  52% (2335/4490)   
+Checking out files:  53% (2380/4490)   
+Checking out files:  54% (2425/4490)   
+Checking out files:  55% (2470/4490)   
+Checking out files:  56% (2515/4490)   
+Checking out files:  57% (2560/4490)   
+Checking out files:  58% (2605/4490)   
+Checking out files:  59% (2650/4490)   
+Checking out files:  60% (2694/4490)   
+Checking out files:  61% (2739/4490)   
+Checking out files:  62% (2784/4490)   
+Checking out files:  63% (2829/4490)   
+Checking out files:  64% (2874/4490)   
+Checking out files:  65% (2919/4490)   
+Checking out files:  66% (2964/4490)   
+Checking out files:  67% (3009/4490)   
+Checking out files:  68% (3054/4490)   
+Checking out files:  69% (3099/4490)   
+Checking out files:  70% (3143/4490)   
+Checking out files:  71% (3188/4490)   
+Checking out files:  72% (3233/4490)   
+Checking out files:  73% (3278/4490)   
+Checking out files:  74% (3323/4490)   
+Checking out files:  75% (3368/4490)   
+Checking out files:  76% (3413/4490)   
+Checking out files:  77% (3458/4490)   
+Checking out files:  78% (3503/4490)   
+Checking out files:  79% (3548/4490)   
+Checking out files:  80% (3592/4490)   
+Checking out files:  81% (3637/4490)   
+Checking out files:  82% (3682/4490)   
+Checking out files:  83% (3727/4490)   
+Checking out files:  84% (3772/4490)   
+Checking out files:  85% (3817/4490)   
+Checking out files:  86% (3862/4490)   
+Checking out files:  87% (3907/4490)   
+Checking out files:  88% (3952/4490)   
+Checking out files:  89% (3997/4490)   
+Checking out files:  90% (4041/4490)   
+Checking out files:  91% (4086/4490)   
+Checking out files:  92% (4131/4490)   
+Checking out files:  93% (4176/4490)   
+Checking out files:  94% (4221/4490)   
+Checking out files:  95% (4266/4490)   
+Checking out files:  96% (4311/4490)   
+Checking out files:  97% (4356/4490)   
+Checking out files:  98% (4401/4490)   
+Checking out files:  99% (4446/4490)   
+Checking out files: 100% (4490/4490)   
+Checking out files: 100% (4490/4490), done.
+  -> Creating working copy of python-cmake-buildsystem git repo...
+Cloning into 'python'...
+done.
+==> Starting prepare()...
+# Python defines
+set(PYTHON_VERSION 3.5.2 CACHE INTERNAL "")
+set(BUILD_EXTENSIONS_AS_BUILTIN ON CACHE INTERNAL "")
+set(ENABLE_CTYPES OFF CACHE INTERNAL "")
+set(ENABLE_CTYPES_TEST OFF CACHE INTERNAL "")
+set(ENABLE_CURSES OFF CACHE INTERNAL "")
+set(ENABLE_CURSES_PANEL OFF CACHE INTERNAL "")
+set(ENABLE_BZ2 OFF CACHE INTERNAL "")
+set(ENABLE_SSL OFF CACHE INTERNAL "")
+set(ENABLE_HASHLIB OFF CACHE INTERNAL "")
+set(ENABLE_CRYPT OFF CACHE INTERNAL "")
+set(INSTALL_MANUAL OFF CACHE INTERNAL "")
+set(INSTALL_TEST OFF CACHE INTERNAL "")
+set(WITH_THREAD OFF CACHE INTERNAL "")
+set(USE_SYSTEM_ZLIB OFF CACHE INTERNAL "")
+set(USE_SYSTEM_SQLITE3 OFF CACHE INTERNAL "")
+Submodule 'thirdparty/python' (https://github.com/python-cmake-buildsystem/python-cmake-buildsystem.git) registered for path 'thirdparty/python'
+Cloning into '/build/ges-git/src/ges-git/thirdparty/python'...
+Submodule path 'thirdparty/python': checked out '8af559448be1576bb0bb1ffd7afbfbb649b2d9dc'
+==> Starting pkgver()...
+==> Updated version: ges-git r149.c6bd265-1
+==> Starting build()...
+-- The C compiler identification is GNU 6.2.1
+-- The CXX compiler identification is GNU 6.2.1
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Boost version: 1.61.0
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /build/ges-git/src/ges-git/build
+Scanning dependencies of target python
+[  0%] Creating directories for 'python'
+[  0%] No download step for 'python'
+[  0%] No patch step for 'python'
+[  0%] No update step for 'python'
+[  0%] Performing configure step for 'python'
+loading initial cache file /build/ges-git/src/ges-git/cmake/ges_python.cmake
+-- The C compiler identification is GNU 6.2.1
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Looking for CMake command configure_package_config_file
+-- Looking for CMake command configure_package_config_file - found
+-- Looking for CMake command write_basic_package_version_file
+-- Looking for CMake command write_basic_package_version_file - found
+-- Looking for CMake command target_compile_definitions
+-- Looking for CMake command target_compile_definitions - found
+-- Looking for CMake property POSITION_INDEPENDENT_CODE
+-- Looking for CMake property POSITION_INDEPENDENT_CODE - found
+-- Downloading http://www.python.org/ftp/python/3.5.2/Python-3.5.2.tgz
+-- [download 0% complete]
+-- [download 1% complete]
+-- [download 2% complete]
+-- [download 3% complete]
+-- [download 4% complete]
+-- [download 5% complete]
+-- [download 6% complete]
+-- [download 7% complete]
+-- [download 8% complete]
+-- [download 9% complete]
+-- [download 10% complete]
+-- [download 11% complete]
+-- [download 12% complete]
+-- [download 13% complete]
+-- [download 14% complete]
+-- [download 15% complete]
+-- [download 16% complete]
+-- [download 17% complete]
+-- [download 18% complete]
+-- [download 19% complete]
+-- [download 20% complete]
+-- [download 21% complete]
+-- [download 22% complete]
+-- [download 23% complete]
+-- [download 24% complete]
+-- [download 25% complete]
+-- [download 26% complete]
+-- [download 27% complete]
+-- [download 28% complete]
+-- [download 29% complete]
+-- [download 30% complete]
+-- [download 31% complete]
+-- [download 32% complete]
+-- [download 33% complete]
+-- [download 34% complete]
+-- [download 35% complete]
+-- [download 36% complete]
+-- [download 37% complete]
+-- [download 38% complete]
+-- [download 39% complete]
+-- [download 40% complete]
+-- [download 41% complete]
+-- [download 42% complete]
+-- [download 43% complete]
+-- [download 44% complete]
+-- [download 45% complete]
+-- [download 46% complete]
+-- [download 47% complete]
+-- [download 48% complete]
+-- [download 49% complete]
+-- [download 50% complete]
+-- [download 51% complete]
+-- [download 52% complete]
+-- [download 53% complete]
+-- [download 54% complete]
+-- [download 55% complete]
+-- [download 56% complete]
+-- [download 57% complete]
+-- [download 58% complete]
+-- [download 59% complete]
+-- [download 60% complete]
+-- [download 61% complete]
+-- [download 62% complete]
+-- [download 63% complete]
+-- [download 64% complete]
+-- [download 65% complete]
+-- [download 66% complete]
+-- [download 67% complete]
+-- [download 68% complete]
+-- [download 69% complete]
+-- [download 70% complete]
+-- [download 71% complete]
+-- [download 72% complete]
+-- [download 73% complete]
+-- [download 74% complete]
+-- [download 75% complete]
+-- [download 76% complete]
+-- [download 77% complete]
+-- [download 78% complete]
+-- [download 79% complete]
+-- [download 80% complete]
+-- [download 81% complete]
+-- [download 82% complete]
+-- [download 83% complete]
+-- [download 84% complete]
+-- [download 85% complete]
+-- [download 86% complete]
+-- [download 87% complete]
+-- [download 88% complete]
+-- [download 89% complete]
+-- [download 90% complete]
+-- [download 91% complete]
+-- [download 92% complete]
+-- [download 93% complete]
+-- [download 94% complete]
+-- [download 95% complete]
+-- [download 96% complete]
+-- [download 97% complete]
+-- [download 98% complete]
+-- [download 99% complete]
+-- [download 100% complete]
+-- Extracting Python-3.5.2.tgz
+-- SRC_DIR: /build/ges-git/src/ges-git/build/python/src/python-build/../Python-3.5.2
+-- PY_VERSION: 3.5.2
+-- The system name is Linux
+-- The system processor is i686
+-- The system version is 4.7.6-1-ARCH
+-- Found BZip2: /usr/lib/libbz2.so (found version "1.0.6") 
+-- Looking for BZ2_bzCompressInit
+-- Looking for BZ2_bzCompressInit - found
+-- Found Curses: /usr/lib/libcurses.so  
+-- Found EXPAT: /usr/lib/libexpat.so (found version "2.2.0") 
+-- Found OpenSSL: /usr/lib/libssl.so;/usr/lib/libcrypto.so (found suitable version "1.0.2j", minimum required is "0.9.7") 
+-- Could NOT find Tclsh (missing:  TCL_TCLSH) 
+-- Could NOT find TCL (missing:  TCL_LIBRARY TCL_INCLUDE_PATH) 
+-- Could NOT find TCLTK (missing:  TCL_LIBRARY TCL_INCLUDE_PATH TK_LIBRARY TK_INCLUDE_PATH) 
+-- Could NOT find TK (missing:  TK_LIBRARY TK_INCLUDE_PATH) 
+-- Checking WITH_HASH_ALGORITHM option
+-- Checking WITH_HASH_ALGORITHM option [default]
+-- Checking ABIFLAGS - m
+-- Checking SOABI - cpython-35m-i686-linux
+-- Looking for include file dirent.h
+-- Looking for include file dirent.h - found
+-- Looking for dirfd
+-- Looking for dirfd - found
+-- Looking for include file alloca.h
+-- Looking for include file alloca.h - found
+-- Looking for include file asm/types.h
+-- Looking for include file asm/types.h - found
+-- Looking for include file arpa/inet.h
+-- Looking for include file arpa/inet.h - found
+-- Looking for include file bluetooth/bluetooth.h
+-- Looking for include file bluetooth/bluetooth.h - not found
+-- Looking for include file bluetooth.h
+-- Looking for include file bluetooth.h - not found
+-- Looking for include file conio.h
+-- Looking for include file conio.h - not found
+-- Looking for include file curses.h
+-- Looking for include file curses.h - found
+-- Looking for include file direct.h
+-- Looking for include file direct.h - not found
+-- Looking for include file dlfcn.h
+-- Looking for include file dlfcn.h - found
+-- Looking for include file errno.h
+-- Looking for include file errno.h - found
+-- Looking for include file fcntl.h
+-- Looking for include file fcntl.h - found
+-- Looking for include file fpu_control.h
+-- Looking for include file fpu_control.h - found
+-- Looking for include file grp.h
+-- Looking for include file grp.h - found
+-- Looking for include file ieeefp.h
+-- Looking for include file ieeefp.h - not found
+-- Looking for include file inttypes.h
+-- Looking for include file inttypes.h - found
+-- Looking for include file io.h
+-- Looking for include file io.h - not found
+-- Looking for include file langinfo.h
+-- Looking for include file langinfo.h - found
+-- Looking for include file libintl.h
+-- Looking for include file libintl.h - found
+-- Looking for include file libutil.h
+-- Looking for include file libutil.h - not found
+-- Looking for include file linux/tipc.h
+-- Looking for include file linux/tipc.h - found
+-- Looking for include file locale.h
+-- Looking for include file locale.h - found
+-- Looking for include file sys/socket.h
+-- Looking for include file sys/socket.h - found
+-- Looking for 3 include files asm/types.h, ..., linux/netlink.h
+-- Looking for 3 include files asm/types.h, ..., linux/netlink.h - found
+-- Looking for include files sys/socket.h, linux/can.h
+-- Looking for include files sys/socket.h, linux/can.h - found
+-- Looking for include files sys/socket.h, linux/can/bcm.h
+-- Looking for include files sys/socket.h, linux/can/bcm.h - found
+-- Looking for include files sys/socket.h, linux/can/raw.h
+-- Looking for include files sys/socket.h, linux/can/raw.h - found
+-- Looking for include file memory.h
+-- Looking for include file memory.h - found
+-- Looking for include file minix/config.h
+-- Looking for include file minix/config.h - not found
+-- Looking for include file ncurses.h
+-- Looking for include file ncurses.h - found
+-- Looking for include file ncurses/panel.h
+-- Looking for include file ncurses/panel.h - not found
+-- Looking for include file netdb.h
+-- Looking for include file netdb.h - found
+-- Looking for include file netinet/in.h
+-- Looking for include file netinet/in.h - found
+-- Looking for include file netpacket/packet.h
+-- Looking for include file netpacket/packet.h - found
+-- Looking for include file panel.h
+-- Looking for include file panel.h - found
+-- Looking for include file poll.h
+-- Looking for include file poll.h - found
+-- Looking for include file process.h
+-- Looking for include file process.h - not found
+-- Looking for include file pthread.h
+-- Looking for include file pthread.h - found
+-- Looking for include file pty.h
+-- Looking for include file pty.h - found
+-- Looking for include file pwd.h
+-- Looking for include file pwd.h - found
+-- Looking for include files stdio.h, readline/readline.h
+-- Looking for include files stdio.h, readline/readline.h - found
+-- Looking for include file semaphore.h
+-- Looking for include file semaphore.h - found
+-- Looking for include file shadow.h
+-- Looking for include file shadow.h - found
+-- Looking for include file signal.h
+-- Looking for include file signal.h - found
+-- Looking for include file spawn.h
+-- Looking for include file spawn.h - found
+-- Looking for include file stdint.h
+-- Looking for include file stdint.h - found
+-- Looking for include file stdlib.h
+-- Looking for include file stdlib.h - found
+-- Looking for include file strings.h
+-- Looking for include file strings.h - found
+-- Looking for include file string.h
+-- Looking for include file string.h - found
+-- Looking for include file stropts.h
+-- Looking for include file stropts.h - found
+-- Looking for include file sysexits.h
+-- Looking for include file sysexits.h - found
+-- Looking for include file sys/audioio.h
+-- Looking for include file sys/audioio.h - not found
+-- Looking for include file sys/bsdtty.h
+-- Looking for include file sys/bsdtty.h - not found
+-- Looking for include file sys/epoll.h
+-- Looking for include file sys/epoll.h - found
+-- Looking for include file sys/event.h
+-- Looking for include file sys/event.h - not found
+-- Looking for include file sys/file.h
+-- Looking for include file sys/file.h - found
+-- Looking for include file sys/loadavg.h
+-- Looking for include file sys/loadavg.h - not found
+-- Looking for include file sys/lock.h
+-- Looking for include file sys/lock.h - not found
+-- Looking for include file sys/mkdev.h
+-- Looking for include file sys/mkdev.h - not found
+-- Looking for include file sys/mman.h
+-- Looking for include file sys/mman.h - found
+-- Looking for include file sys/modem.h
+-- Looking for include file sys/modem.h - not found
+-- Looking for include file sys/param.h
+-- Looking for include file sys/param.h - found
+-- Looking for include file sys/poll.h
+-- Looking for include file sys/poll.h - found
+-- Looking for include file sys/resource.h
+-- Looking for include file sys/resource.h - found
+-- Looking for include file sys/select.h
+-- Looking for include file sys/select.h - found
+-- Looking for include file sys/statvfs.h
+-- Looking for include file sys/statvfs.h - found
+-- Looking for include file sys/stat.h
+-- Looking for include file sys/stat.h - found
+-- Looking for include file sys/timeb.h
+-- Looking for include file sys/timeb.h - found
+-- Looking for include file sys/termio.h
+-- Looking for include file sys/termio.h - not found
+-- Looking for include file sys/times.h
+-- Looking for include file sys/times.h - found
+-- Looking for include file sys/time.h
+-- Looking for include file sys/time.h - found
+-- Looking for include file sys/types.h
+-- Looking for include file sys/types.h - found
+-- Looking for include file sys/un.h
+-- Looking for include file sys/un.h - found
+-- Looking for include file sys/utsname.h
+-- Looking for include file sys/utsname.h - found
+-- Looking for include file sys/wait.h
+-- Looking for include file sys/wait.h - found
+-- Looking for include file termios.h
+-- Looking for include file termios.h - found
+-- Looking for include file term.h
+-- Looking for include file term.h - found
+-- Looking for include file unistd.h
+-- Looking for include file unistd.h - found
+-- Looking for include file util.h
+-- Looking for include file util.h - not found
+-- Looking for include file utime.h
+-- Looking for include file utime.h - found
+-- Looking for include file wchar.h
+-- Looking for include file wchar.h - found
+-- Looking for 4 include files stdlib.h, ..., float.h
+-- Looking for 4 include files stdlib.h, ..., float.h - found
+-- Looking for include file stdarg.h
+-- Looking for include file stdarg.h - found
+-- Looking for include file endian.h
+-- Looking for include file endian.h - found
+-- Looking for include file sched.h
+-- Looking for include file sched.h - found
+-- Looking for include file sys/devpoll.h
+-- Looking for include file sys/devpoll.h - not found
+-- Looking for include file sys/endian.h
+-- Looking for include file sys/endian.h - not found
+-- Looking for include file sys/ioctl.h
+-- Looking for include file sys/ioctl.h - found
+-- Looking for include files sys/types.h, sys/kern_control.h
+-- Looking for include files sys/types.h, sys/kern_control.h - not found
+-- Looking for include file sys/sendfile.h
+-- Looking for include file sys/sendfile.h - found
+-- Looking for include file sys/syscall.h
+-- Looking for include file sys/syscall.h - found
+-- Looking for include file sys/sys_domain.h
+-- Looking for include file sys/sys_domain.h - not found
+-- Looking for include file sys/uio.h
+-- Looking for include file sys/uio.h - found
+-- Looking for include file sys/xattr.h
+-- Looking for include file sys/xattr.h - found
+-- Looking for 4 include files stdlib.h, ..., net/if.h
+-- Looking for 4 include files stdlib.h, ..., net/if.h - found
+-- ptmx: //dev/ptmx ptc: HAVE_DEV_PTC-NOTFOUND
+-- Looking for acosh
+-- Looking for acosh - not found
+-- Looking for openpty
+-- Looking for openpty - not found
+-- Checking for RAND_egd in -lcrypto
+-- Checking for RAND_egd in -lcrypto - yes
+-- Checking for XOPEN_SOURCE
+-- Checking for XOPEN_SOURCE - yes
+-- Checking for Large File Support
+-- Checking for Large File Support - yes
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- Check size of double
+-- Check size of double - done
+-- Check size of float
+-- Check size of float - done
+-- Check size of fpos_t
+-- Check size of fpos_t - done
+-- Check size of int
+-- Check size of int - done
+-- Check size of long
+-- Check size of long - done
+-- Check size of long double
+-- Check size of long double - done
+-- Check size of long long
+-- Check size of long long - done
+-- Check size of off_t
+-- Check size of off_t - done
+-- Check size of pid_t
+-- Check size of pid_t - done
+-- Check size of pthread_t
+-- Check size of pthread_t - done
+-- Check size of short
+-- Check size of short - done
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of ssize_t
+-- Check size of ssize_t - done
+-- Check size of time_t
+-- Check size of time_t - done
+-- Check size of uintptr_t
+-- Check size of uintptr_t - done
+-- Check size of void *
+-- Check size of void * - done
+-- Check size of wchar_t
+-- Check size of wchar_t - done
+-- Check size of _Bool
+-- Check size of _Bool - done
+-- Looking for alarm
+-- Looking for alarm - found
+-- Looking for alloca
+-- Looking for alloca - found
+-- Looking for altzone
+-- Looking for altzone - not found
+-- Looking for bind_textdomain_codeset
+-- Looking for bind_textdomain_codeset - found
+-- Looking for chflags
+-- Looking for chflags - not found
+-- Looking for chown
+-- Looking for chown - found
+-- Looking for chroot
+-- Looking for chroot - found
+-- Looking for clock
+-- Looking for clock - found
+-- Looking for confstr
+-- Looking for confstr - found
+-- Looking for ctermid
+-- Looking for ctermid - found
+-- Looking for ctermid_r
+-- Looking for ctermid_r - not found
+-- Looking for dup2
+-- Looking for dup2 - found
+-- Looking for epoll_create
+-- Looking for epoll_create - found
+-- Looking for epoll_create1
+-- Looking for epoll_create1 - found
+-- Looking for execv
+-- Looking for execv - found
+-- Looking for fchdir
+-- Looking for fchdir - found
+-- Looking for fchmod
+-- Looking for fchmod - found
+-- Looking for fchown
+-- Looking for fchown - found
+-- Looking for fdatasync
+-- Looking for fdatasync - found
+-- Looking for flock
+-- Looking for flock - found
+-- Looking for fork
+-- Looking for fork - found
+-- Looking for forkpty
+-- Looking for forkpty - found
+-- Looking for fpathconf
+-- Looking for fpathconf - found
+-- Looking for __fpu_control
+-- Looking for __fpu_control - found
+-- Looking for fseek64
+-- Looking for fseek64 - not found
+-- Looking for fseeko
+-- Looking for fseeko - found
+-- Looking for fstatvfs
+-- Looking for fstatvfs - found
+-- Looking for fsync
+-- Looking for fsync - found
+-- Looking for ftell64
+-- Looking for ftell64 - not found
+-- Looking for ftello
+-- Looking for ftello - found
+-- Looking for ftime
+-- Looking for ftime - found
+-- Looking for ftruncate
+-- Looking for ftruncate - found
+-- Looking for getc_unlocked
+-- Looking for getc_unlocked - found
+-- Looking for getgroups
+-- Looking for getgroups - found
+-- Looking for getitimer
+-- Looking for getitimer - found
+-- Looking for getloadavg
+-- Looking for getloadavg - found
+-- Looking for getlogin
+-- Looking for getlogin - found
+-- Looking for getpagesize
+-- Looking for getpagesize - found
+-- Looking for getpgid
+-- Looking for getpgid - found
+-- Looking for getpgrp
+-- Looking for getpgrp - found
+-- Looking for getpid
+-- Looking for getpid - found
+-- Looking for getpriority
+-- Looking for getpriority - found
+-- Looking for getpwent
+-- Looking for getpwent - found
+-- Looking for getresgid
+-- Looking for getresgid - found
+-- Looking for getresuid
+-- Looking for getresuid - found
+-- Looking for getsid
+-- Looking for getsid - found
+-- Looking for getspent
+-- Looking for getspent - found
+-- Looking for getspnam
+-- Looking for getspnam - found
+-- Looking for gettimeofday
+-- Looking for gettimeofday - found
+-- Looking for getwd
+-- Looking for getwd - found
+-- Looking for hypot
+-- Looking for hypot - found
+-- Looking for initgroups
+-- Looking for initgroups - found
+-- Looking for kill
+-- Looking for kill - found
+-- Looking for killpg
+-- Looking for killpg - found
+-- Looking for kqueue
+-- Looking for kqueue - not found
+-- Looking for lchflags
+-- Looking for lchflags - not found
+-- Checking for lchmod
+-- Checking for lchmod - no
+-- Looking for lchown
+-- Looking for lchown - found
+-- Looking for link
+-- Looking for link - found
+-- Looking for lstat
+-- Looking for lstat - found
+-- Looking for makedev
+-- Looking for makedev - found
+-- Looking for memcpy
+-- Looking for memcpy - found
+-- Looking for memmove
+-- Looking for memmove - found
+-- Looking for mkfifo
+-- Looking for mkfifo - found
+-- Looking for mknod
+-- Looking for mknod - found
+-- Looking for mktime
+-- Looking for mktime - found
+-- Looking for mmap
+-- Looking for mmap - found
+-- Looking for mremap
+-- Looking for mremap - found
+-- Looking for nice
+-- Looking for nice - found
+-- Looking for openpty
+-- Looking for openpty - found
+-- Looking for pathconf
+-- Looking for pathconf - found
+-- Looking for pause
+-- Looking for pause - found
+-- Looking for plock
+-- Looking for plock - not found
+-- Looking for poll
+-- Looking for poll - found
+-- Looking for putenv
+-- Looking for putenv - found
+-- Looking for readlink
+-- Looking for readlink - found
+-- Looking for realpath
+-- Looking for realpath - found
+-- Looking for select
+-- Looking for select - found
+-- Looking for setegid
+-- Looking for setegid - found
+-- Looking for seteuid
+-- Looking for seteuid - found
+-- Looking for setgid
+-- Looking for setgid - found
+-- Looking for setgroups
+-- Looking for setgroups - found
+-- Looking for setitimer
+-- Looking for setitimer - found
+-- Looking for setlocale
+-- Looking for setlocale - found
+-- Looking for setpgid
+-- Looking for setpgid - found
+-- Looking for setpgrp
+-- Looking for setpgrp - found
+-- Looking for setregid
+-- Looking for setregid - found
+-- Looking for setreuid
+-- Looking for setreuid - found
+-- Looking for setresgid
+-- Looking for setresgid - found
+-- Looking for setresuid
+-- Looking for setresuid - found
+-- Looking for setsid
+-- Looking for setsid - found
+-- Looking for setuid
+-- Looking for setuid - found
+-- Looking for setvbuf
+-- Looking for setvbuf - found
+-- Looking for sigaction
+-- Looking for sigaction - found
+-- Looking for siginterrupt
+-- Looking for siginterrupt - found
+-- Looking for sigrelse
+-- Looking for sigrelse - found
+-- Looking for snprintf
+-- Looking for snprintf - found
+-- Looking for socketpair
+-- Looking for socketpair - found
+-- Looking for statvfs
+-- Looking for statvfs - found
+-- Looking for strdup
+-- Looking for strdup - found
+-- Looking for strftime
+-- Looking for strftime - found
+-- Looking for symlink
+-- Looking for symlink - found
+-- Looking for sysconf
+-- Looking for sysconf - found
+-- Looking for tcgetpgrp
+-- Looking for tcgetpgrp - found
+-- Looking for tcsetpgrp
+-- Looking for tcsetpgrp - found
+-- Looking for tempnam
+-- Looking for tempnam - found
+-- Looking for timegm
+-- Looking for timegm - found
+-- Looking for times
+-- Looking for times - found
+-- Looking for tmpfile
+-- Looking for tmpfile - found
+-- Looking for tmpnam
+-- Looking for tmpnam - found
+-- Looking for tmpnam_r
+-- Looking for tmpnam_r - found
+-- Looking for truncate
+-- Looking for truncate - found
+-- Looking for uname
+-- Looking for uname - found
+-- Looking for unsetenv
+-- Looking for unsetenv - found
+-- Looking for utimes
+-- Looking for utimes - found
+-- Looking for wait3
+-- Looking for wait3 - found
+-- Looking for wait4
+-- Looking for wait4 - found
+-- Looking for waitpid
+-- Looking for waitpid - found
+-- Looking for wcscoll
+-- Looking for wcscoll - found
+-- Looking for _getpty
+-- Looking for _getpty - not found
+-- Looking for accept4
+-- Looking for accept4 - found
+-- Looking for dup3
+-- Looking for dup3 - found
+-- Looking for faccessat
+-- Looking for faccessat - found
+-- Looking for fchmodat
+-- Looking for fchmodat - found
+-- Looking for fchownat
+-- Looking for fchownat - found
+-- Looking for fexecve
+-- Looking for fexecve - found
+-- Looking for fdopendir
+-- Looking for fdopendir - found
+-- Looking for fstatat
+-- Looking for fstatat - found
+-- Looking for futimens
+-- Looking for futimens - found
+-- Looking for futimes
+-- Looking for futimes - found
+-- Looking for futimesat
+-- Looking for futimesat - found
+-- Looking for getentropy
+-- Looking for getentropy - not found
+-- Looking for getgrouplist
+-- Looking for getgrouplist - found
+-- Looking for htole64
+-- Looking for htole64 - found
+-- Looking for if_nameindex
+-- Looking for if_nameindex - found
+-- Looking for linkat
+-- Looking for linkat - found
+-- Looking for lockf
+-- Looking for lockf - found
+-- Looking for lutimes
+-- Looking for lutimes - found
+-- Looking for mbrtowc
+-- Looking for mbrtowc - found
+-- Looking for memrchr
+-- Looking for memrchr - found
+-- Looking for mkdirat
+-- Looking for mkdirat - found
+-- Looking for mkfifoat
+-- Looking for mkfifoat - found
+-- Looking for mknodat
+-- Looking for mknodat - found
+-- Looking for openat
+-- Looking for openat - found
+-- Looking for pipe2
+-- Looking for pipe2 - found
+-- Looking for posix_fadvise
+-- Looking for posix_fadvise - found
+-- Looking for posix_fallocate
+-- Looking for posix_fallocate - found
+-- Looking for pread
+-- Looking for pread - found
+-- Looking for prlimit
+-- Looking for prlimit - found
+-- Looking for pthread_kill
+-- Looking for pthread_kill - found
+-- Looking for pwrite
+-- Looking for pwrite - found
+-- Looking for readlinkat
+-- Looking for readlinkat - found
+-- Looking for readv
+-- Looking for readv - found
+-- Looking for renameat
+-- Looking for renameat - found
+-- Looking for sched_rr_get_interval
+-- Looking for sched_rr_get_interval - found
+-- Looking for sched_setaffinity
+-- Looking for sched_setaffinity - found
+-- Looking for sched_setparam
+-- Looking for sched_setparam - found
+-- Looking for sched_setscheduler
+-- Looking for sched_setscheduler - found
+-- Looking for sendfile
+-- Looking for sendfile - found
+-- Looking for sethostname
+-- Looking for sethostname - found
+-- Looking for setpriority
+-- Looking for setpriority - found
+-- Looking for sched_get_priority_max
+-- Looking for sched_get_priority_max - found
+-- Looking for sigaltstack
+-- Looking for sigaltstack - found
+-- Looking for sigpending
+-- Looking for sigpending - found
+-- Looking for sigtimedwait
+-- Looking for sigtimedwait - found
+-- Looking for sigwait
+-- Looking for sigwait - found
+-- Looking for sigwaitinfo
+-- Looking for sigwaitinfo - found
+-- Looking for strlcpy
+-- Looking for strlcpy - not found
+-- Looking for symlinkat
+-- Looking for symlinkat - found
+-- Looking for sync
+-- Looking for sync - found
+-- Looking for unlinkat
+-- Looking for unlinkat - found
+-- Looking for utimensat
+-- Looking for utimensat - found
+-- Looking for waitid
+-- Looking for waitid - found
+-- Looking for wcsftime
+-- Looking for wcsftime - found
+-- Looking for wcsxfrm
+-- Looking for wcsxfrm - found
+-- Looking for wmemcmp
+-- Looking for wmemcmp - found
+-- Looking for writev
+-- Looking for writev - found
+-- Performing Test HAVE_STAT_TV_NSEC
+-- Performing Test HAVE_STAT_TV_NSEC - Success
+-- Performing Test HAVE_STAT_TV_NSEC2
+-- Performing Test HAVE_STAT_TV_NSEC2 - Failed
+-- Performing Test HAVE_STRUCT_STAT_ST_BIRTHTIME
+-- Performing Test HAVE_STRUCT_STAT_ST_BIRTHTIME - Failed
+-- Performing Test HAVE_STRUCT_STAT_ST_BLKSIZE
+-- Performing Test HAVE_STRUCT_STAT_ST_BLKSIZE - Success
+-- Performing Test HAVE_STRUCT_STAT_ST_BLOCKS
+-- Performing Test HAVE_STRUCT_STAT_ST_BLOCKS - Success
+-- Performing Test HAVE_STRUCT_STAT_ST_FLAGS
+-- Performing Test HAVE_STRUCT_STAT_ST_FLAGS - Failed
+-- Performing Test HAVE_STRUCT_STAT_ST_GEN
+-- Performing Test HAVE_STRUCT_STAT_ST_GEN - Failed
+-- Performing Test HAVE_STRUCT_STAT_ST_RDEV
+-- Performing Test HAVE_STRUCT_STAT_ST_RDEV - Success
+-- Checking for x64 gcc inline assembler
+-- Checking for x64 gcc inline assembler - no
+-- Checking whether C doubles are little-endian IEEE 754 binary64
+-- Checking whether C doubles are little-endian IEEE 754 binary64 - yes
+-- Checking whether C doubles are big-endian IEEE 754 binary64
+-- Checking whether C doubles are big-endian IEEE 754 binary64 - no
+-- Checking doubles are ARM mixed-endian IEEE 754 binary64
+-- Checking doubles are ARM mixed-endian IEEE 754 binary64 - no
+-- Checking whether we can use gcc inline assembler to get and set x87 control word
+-- Checking whether we can use gcc inline assembler to get and set x87 control word - yes
+-- Checking whether read-only mmap of a plain file works
+-- Checking whether read-only mmap of a plain file works - yes
+-- Checking whether assembler supports .ascii
+-- Checking whether assembler supports .ascii - yes
+-- Checking whether assembler supports .cfi_* directives
+-- Checking whether assembler supports .cfi_* directives - yes
+-- Checking whether assembler supports .string
+-- Checking whether assembler supports .string - yes
+-- Checking whether assembler supports PC relative relocs
+-- Checking whether assembler supports PC relative relocs - yes
+-- Performing Test HAVE_HIDDEN_VISIBILITY_ATTRIBUTE
+-- Performing Test HAVE_HIDDEN_VISIBILITY_ATTRIBUTE - Success
+-- Performing Test HAVE_MMAP_ANON
+-- Performing Test HAVE_MMAP_ANON - Success
+-- Performing Test HAVE_MMAP_DEV_ZERO
+-- Performing Test HAVE_MMAP_DEV_ZERO - Success
+-- Checking whether we can use gcc inline assembler to get and set mc68881 fpcr
+-- Checking whether we can use gcc inline assembler to get and set mc68881 fpcr - no
+-- Checking for x87-style double rounding
+-- Checking for x87-style double rounding - yes
+-- Checking whether tanh preserves the sign of zero
+-- Checking whether tanh preserves the sign of zero - yes
+-- Checking whether log1p drops the sign of negative zero
+-- Checking whether log1p drops the sign of negative zero - no
+-- Looking for acosh
+-- Looking for acosh - found
+-- Looking for asinh
+-- Looking for asinh - found
+-- Looking for atanh
+-- Looking for atanh - found
+-- Looking for copysign
+-- Looking for copysign - found
+-- Looking for erf
+-- Looking for erf - found
+-- Looking for erfc
+-- Looking for erfc - found
+-- Looking for expm1
+-- Looking for expm1 - found
+-- Looking for finite
+-- Looking for finite - found
+-- Looking for gamma
+-- Looking for gamma - found
+-- Looking for lgamma
+-- Looking for lgamma - found
+-- Looking for log1p
+-- Looking for log1p - found
+-- Looking for round
+-- Looking for round - found
+-- Looking for tgamma
+-- Looking for tgamma - found
+-- Looking for log2
+-- Looking for log2 - found
+-- Looking for isinf
+-- Looking for isinf - found
+-- Looking for isnan
+-- Looking for isnan - found
+-- Looking for isfinite
+-- Looking for isfinite - found
+-- Performing Test HAVE_STRUCT_TM_TM_ZONE
+-- Performing Test HAVE_STRUCT_TM_TM_ZONE - Success
+-- Check size of struct tm
+-- Check size of struct tm - done
+-- Performing Test TIME_WITH_SYS_TIME
+-- Performing Test TIME_WITH_SYS_TIME - Success
+-- Performing Test SYS_SELECT_WITH_SYS_TIME
+-- Performing Test SYS_SELECT_WITH_SYS_TIME - Success
+-- Performing Test GETTIMEOFDAY_WITH_TZ
+-- Performing Test GETTIMEOFDAY_WITH_TZ - Success
+-- Looking for clock_getres
+-- Looking for clock_getres - found
+-- Looking for clock_gettime
+-- Looking for clock_gettime - found
+-- Checking for UCS-4 tcl
+-- Checking for UCS-4 tcl - no
+-- Looking for gethostbyname_r
+-- Looking for gethostbyname_r - found
+-- Checking gethostbyname_r with 6 args
+-- Checking gethostbyname_r with 6 args - yes
+-- Looking for gai_strerror
+-- Looking for gai_strerror - found
+-- Looking for getaddrinfo
+-- Looking for getaddrinfo - found
+-- Looking for getnameinfo
+-- Looking for getnameinfo - found
+-- Looking for getpeername
+-- Looking for getpeername - found
+-- Looking for hstrerror
+-- Looking for hstrerror - found
+-- Looking for inet_aton
+-- Looking for inet_aton - found
+-- Looking for inet_pton
+-- Looking for inet_pton - found
+-- Check size of struct addrinfo
+-- Check size of struct addrinfo - done
+-- Performing Test HAVE_SOCKADDR_SA_LEN
+-- Performing Test HAVE_SOCKADDR_SA_LEN - Failed
+-- Check size of struct sockaddr_storage
+-- Check size of struct sockaddr_storage - done
+-- Looking for pthread_init
+-- Looking for pthread_init - not found
+-- Looking for pthread_sigmask
+-- Looking for pthread_sigmask - not found
+-- Looking for pthread_atfork
+-- Looking for pthread_atfork - not found
+-- Looking for sem_getvalue
+-- Looking for sem_getvalue - not found
+-- Looking for sem_open
+-- Looking for sem_open - not found
+-- Looking for sem_timedwait
+-- Looking for sem_timedwait - not found
+-- Looking for sem_unlink
+-- Looking for sem_unlink - not found
+-- Checking whether POSIX semaphores are enabled
+-- Checking whether POSIX semaphores are enabled - failed to compile
+-- Checking for broken sem_getvalue
+-- Checking for broken sem_getvalue - failed to compile
+-- Looking for rl_callback_handler_install
+-- Looking for rl_callback_handler_install - found
+-- Looking for rl_catch_signals
+-- Looking for rl_catch_signals - found
+-- Looking for rl_completion_append_character
+-- Looking for rl_completion_append_character - found
+-- Looking for rl_completion_display_matches_hook
+-- Looking for rl_completion_display_matches_hook - found
+-- Looking for rl_completion_suppress_append
+-- Looking for rl_completion_suppress_append - found
+-- Looking for rl_completion_matches
+-- Looking for rl_completion_matches - found
+-- Looking for rl_pre_input_hook
+-- Looking for rl_pre_input_hook - found
+-- Looking for is_term_resized
+-- Looking for is_term_resized - found
+-- Looking for resizeterm
+-- Looking for resizeterm - found
+-- Looking for resize_term
+-- Looking for resize_term - found
+-- Performing Test WINDOW_HAS_FLAGS
+-- Performing Test WINDOW_HAS_FLAGS - Success
+-- Performing Test MVWDELCH_IS_EXPRESSION
+-- Performing Test MVWDELCH_IS_EXPRESSION - Success
+-- Looking for dlopen
+-- Looking for dlopen - found
+-- Check size of gid_t
+-- Check size of gid_t - done
+-- Check size of mode_t
+-- Check size of mode_t - done
+-- Check size of off_t
+-- Check size of off_t - done
+-- Check size of pid_t
+-- Check size of pid_t - done
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of uint64_t
+-- Check size of uint64_t - done
+-- Check size of int64_t
+-- Check size of int64_t - done
+-- Check size of uint32_t
+-- Check size of uint32_t - done
+-- Check size of int32_t
+-- Check size of int32_t - done
+-- Check size of __uint128_t
+-- Check size of __uint128_t - failed
+-- Check size of socklen_t
+-- Check size of socklen_t - done
+-- Check size of uid_t
+-- Check size of uid_t - done
+-- Check size of clock_t
+-- Check size of clock_t - done
+-- Performing Test const_WORKS
+-- Performing Test const_WORKS - Success
+-- Performing Test signed_WORKS
+-- Performing Test signed_WORKS - Success
+-- Performing Test volatile_WORKS
+-- Performing Test volatile_WORKS - Success
+-- Checking for prototypes
+-- Checking for prototypes - yes
+-- Performing Test NOT_VA_LIST_IS_ARRAY
+-- Performing Test NOT_VA_LIST_IS_ARRAY - Success
+-- Checking whether char is unsigned
+-- Checking whether char is unsigned - no
+-- Checking if the dirent structure of a d_type field
+-- Checking if the dirent structure of a d_type field - yes
+-- Checking for the Linux getrandom() syscall
+-- Checking for the Linux getrandom() syscall - no
+-- Checking for the getrandom() function
+-- Checking for the getrandom() function - no
+-- Performing Test GETPGRP_HAVE_ARG
+-- Performing Test GETPGRP_HAVE_ARG - Failed
+-- Performing Test SETPGRP_HAVE_ARG
+-- Performing Test SETPGRP_HAVE_ARG - Failed
+-- Checking for inline
+-- Checking for inline - yes
+-- Checking for append_history in -lreadline
+-- Checking for append_history in -lreadline - yes
+-- Performing Test HAVE_BROKEN_NICE
+-- Performing Test HAVE_BROKEN_NICE - Failed
+-- Performing Test HAVE_BROKEN_POLL
+-- Performing Test HAVE_BROKEN_POLL - Failed
+-- Checking for working tzset()
+-- Checking for working tzset() - yes
+-- Checking for broken unsetenv
+-- Checking for broken unsetenv - no
+-- Checking aligned memory access is required
+-- Checking aligned memory access is required - no
+-- Checking for broken mbstowcs
+-- Checking for broken mbstowcs - no
+-- Checking whether GNU supports computed gotos
+-- Checking whether GNU supports computed gotos - yes
+-- Performing Test have_O2
+-- Performing Test have_O2 - Success
+-- Checking for glibc _FORTIFY_SOURCE/memmove bug
+-- Checking for glibc _FORTIFY_SOURCE/memmove bug - no
+-- Checking for gcc ipa-pure-const bug
+-- Checking for gcc ipa-pure-const bug - no
+-- Checking for stdatomic.h
+-- Checking for stdatomic.h - yes
+-- Checking for GCC >= 4.7 __atomic builtins
+-- Checking for GCC >= 4.7 __atomic builtins - yes
+-- Checking for %lld and %llu printf() format support
+-- Checking for %lld and %llu printf() format support - yes
+-- Checking for %zd printf() format support()
+-- Checking for %zd printf() format support() - yes
+-- Performing Test HAVE_LINUX_CAN_RAW_FD_FRAMES
+-- Performing Test HAVE_LINUX_CAN_RAW_FD_FRAMES - Success
+-- 
+-- The following extensions will NOT be built:
+-- 
+--     cPickle (not set: IS_PY2)
+--     _crypt (not set: ENABLE_CRYPT)
+--     cStringIO (not set: IS_PY2)
+--     _ctypes_test (not set: ENABLE_CTYPES_TEST)
+--     future_builtins (not set: IS_PY2)
+--     _hotshot (not set: IS_PY2)
+--     operator (not set: IS_PY2)
+--     strop (not set: IS_PY2)
+--     _thread (not set: WITH_THREAD)
+--     _scproxy (not set: APPLE HAVE_LIBSYSTEMCONFIGURATION)
+--     linuxaudiodev (not set: IS_PY2)
+--     _msi (not set: WIN32)
+--     msvcrt (not set: MSVC)
+--     nt (not set: WIN32)
+--     _subprocess (not set: WIN32 IS_PY2)
+--     winreg (not set: WIN32)
+--     overlapped (not set: WIN32)
+--     _winapi (not set: WIN32)
+--     _multiprocessing (not set: WITH_THREAD)
+--     _ctypes (not set: ENABLE_CTYPES)
+--     _bsddb (not set: DB_LIBRARIES)
+--     _bz2 (not set: ENABLE_BZ2)
+--     _curses_panel (not set: ENABLE_CURSES_PANEL)
+--     _curses (not set: ENABLE_CURSES)
+--     _hashlib (not set: ENABLE_HASHLIB)
+--     _ssl (not set: ENABLE_SSL)
+--     _tkinter (not set: TCL_LIBRARY TK_LIBRARY TCL_INCLUDE_PATH TK_INCLUDE_PATH X11_INCLUDE_DIR X11_LIBRARIES)
+--     zlib (not set: ZLIB_LIBRARY ZLIB_INCLUDE_DIR)
+-- 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /build/ges-git/src/ges-git/build/python/src/python-build
+[  1%] Performing build step for 'python'
+Scanning dependencies of target extension_testcapi
+[  0%] Building C object CMakeBuild/extensions/extension_testcapi/CMakeFiles/extension_testcapi.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_testcapimodule.c.o
+[  1%] Linking C shared library ../../../lib/python3.5/lib-dynload/_testcapi.so
+[  1%] Built target extension_testcapi
+Scanning dependencies of target _freeze_importlib
+[  1%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Programs/_freeze_importlib.c.o
+[  1%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/getbuildinfo.c.o
+[  1%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Parser/myreadline.c.o
+[  1%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Parser/parsetok.c.o
+[  2%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Parser/tokenizer.c.o
+[  2%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/__/__/CMakeFiles/config.c.o
+[  2%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/gcmodule.c.o
+[  2%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/main.c.o
+[  3%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/getpath.c.o
+[  3%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_codecsmodule.c.o
+[  3%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/errnomodule.c.o
+[  3%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/signalmodule.c.o
+[  3%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_sre.c.o
+[  4%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/symtablemodule.c.o
+[  4%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_weakref.c.o
+[  4%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/xxsubtype.c.o
+[  4%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/zipimport.c.o
+[  5%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/accu.c.o
+[  5%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/bytesobject.c.o
+[  5%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/namespaceobject.c.o
+[  5%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/odictobject.c.o
+[  5%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/abstract.c.o
+[  6%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/boolobject.c.o
+[  6%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/bytearrayobject.c.o
+[  6%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/bytes_methods.c.o
+[  6%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/capsule.c.o
+[  7%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/cellobject.c.o
+[  7%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/classobject.c.o
+[  7%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/codeobject.c.o
+[  7%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/complexobject.c.o
+[  7%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/descrobject.c.o
+[  8%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/dictobject.c.o
+[  8%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/enumobject.c.o
+[  8%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/exceptions.c.o
+[  8%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/fileobject.c.o
+[  9%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/floatobject.c.o
+[  9%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/frameobject.c.o
+[  9%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/funcobject.c.o
+[  9%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/genobject.c.o
+[  9%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/iterobject.c.o
+[ 10%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/listobject.c.o
+[ 10%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/longobject.c.o
+[ 10%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/memoryobject.c.o
+[ 10%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/methodobject.c.o
+[ 11%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/moduleobject.c.o
+[ 11%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/object.c.o
+[ 11%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/obmalloc.c.o
+[ 11%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/rangeobject.c.o
+[ 11%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/setobject.c.o
+[ 12%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/sliceobject.c.o
+[ 12%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/structseq.c.o
+[ 12%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/tupleobject.c.o
+[ 12%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/typeobject.c.o
+[ 13%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/unicodectype.c.o
+[ 13%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/unicodeobject.c.o
+[ 13%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Objects/weakrefobject.c.o
+[ 13%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Parser/acceler.c.o
+[ 13%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Parser/bitset.c.o
+[ 14%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Parser/firstsets.c.o
+[ 14%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Parser/grammar1.c.o
+[ 14%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Parser/grammar.c.o
+[ 14%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Parser/listnode.c.o
+[ 15%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Parser/metagrammar.c.o
+[ 15%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Parser/node.c.o
+[ 15%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Parser/parser.c.o
+[ 15%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Parser/pgen.c.o
+[ 15%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/dynload_shlib.c.o
+[ 16%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/dynamic_annotations.c.o
+[ 16%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/fileutils.c.o
+[ 16%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/pyhash.c.o
+[ 16%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/pylifecycle.c.o
+[ 17%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/pystrhex.c.o
+[ 17%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/pystrtod.c.o
+[ 17%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/pytime.c.o
+[ 17%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/asdl.c.o
+[ 17%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/ast.c.o
+[ 18%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/bltinmodule.c.o
+[ 18%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/ceval.c.o
+[ 18%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/codecs.c.o
+[ 18%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/compile.c.o
+[ 19%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/dtoa.c.o
+[ 19%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/errors.c.o
+[ 19%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/formatter_unicode.c.o
+[ 19%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/future.c.o
+[ 19%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/getargs.c.o
+[ 20%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/getcompiler.c.o
+[ 20%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/getcopyright.c.o
+[ 20%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/getopt.c.o
+[ 20%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/getplatform.c.o
+[ 21%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/getversion.c.o
+[ 21%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/graminit.c.o
+[ 21%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/import.c.o
+[ 21%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/importdl.c.o
+[ 21%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/marshal.c.o
+[ 22%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/modsupport.c.o
+[ 22%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/mysnprintf.c.o
+[ 22%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/mystrtoul.c.o
+[ 22%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/peephole.c.o
+[ 23%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/pyarena.c.o
+[ 23%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/pyctype.c.o
+[ 23%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/pyfpe.c.o
+[ 23%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/pymath.c.o
+[ 23%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/pystate.c.o
+[ 24%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/pystrcmp.c.o
+[ 24%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/Python-ast.c.o
+[ 24%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/pythonrun.c.o
+[ 24%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/random.c.o
+[ 25%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/structmember.c.o
+[ 25%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/symtable.c.o
+[ 25%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/sysmodule.c.o
+[ 25%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/traceback.c.o
+[ 25%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/_warnings.c.o
+[ 26%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Python/frozenmain.c.o
+[ 26%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/arraymodule.c.o
+[ 26%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/audioop.c.o
+[ 26%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_bisectmodule.c.o
+[ 27%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_math.c.o
+[ 27%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/cmathmodule.c.o
+[ 27%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/cjkcodecs/_codecs_cn.c.o
+[ 27%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/cjkcodecs/_codecs_hk.c.o
+[ 27%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/cjkcodecs/_codecs_iso2022.c.o
+[ 28%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/cjkcodecs/_codecs_jp.c.o
+[ 28%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/cjkcodecs/_codecs_kr.c.o
+[ 28%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/cjkcodecs/_codecs_tw.c.o
+[ 28%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_collectionsmodule.c.o
+[ 29%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_csv.c.o
+[ 29%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_datetimemodule.c.o
+[ 29%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/timemodule.c.o
+[ 29%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_functoolsmodule.c.o
+[ 29%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_heapqmodule.c.o
+[ 30%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_io/_iomodule.c.o
+[ 30%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_io/bufferedio.c.o
+[ 30%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_io/bytesio.c.o
+[ 30%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_io/fileio.c.o
+[ 31%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_io/iobase.c.o
+[ 31%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_io/stringio.c.o
+[ 31%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_io/textio.c.o
+[ 31%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/itertoolsmodule.c.o
+[ 31%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_json.c.o
+[ 32%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_localemodule.c.o
+[ 32%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_lsprof.c.o
+[ 32%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/rotatingtree.c.o
+[ 32%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/mathmodule.c.o
+[ 33%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/mmapmodule.c.o
+[ 33%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/cjkcodecs/multibytecodec.c.o
+[ 33%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/parsermodule.c.o
+[ 33%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_randommodule.c.o
+[ 33%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_struct.c.o
+[ 34%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/unicodedata.c.o
+[ 34%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/atexitmodule.c.o
+[ 34%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/faulthandler.c.o
+[ 34%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_opcode.c.o
+[ 35%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_operator.c.o
+[ 35%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_pickle.c.o
+[ 35%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_stat.c.o
+[ 35%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_testbuffer.c.o
+[ 35%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_testimportmultiple.c.o
+[ 36%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_testmultiphase.c.o
+[ 36%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/hashtable.c.o
+[ 36%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_tracemalloc.c.o
+[ 36%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/xxlimited.c.o
+[ 37%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/fcntlmodule.c.o
+[ 37%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/grpmodule.c.o
+[ 37%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/nismodule.c.o
+[ 37%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/posixmodule.c.o
+[ 37%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/pwdmodule.c.o
+[ 38%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/resource.c.o
+[ 38%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/spwdmodule.c.o
+[ 38%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/syslogmodule.c.o
+[ 38%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/termios.c.o
+[ 39%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_posixsubprocess.c.o
+[ 39%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/ossaudiodev.c.o
+[ 39%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/selectmodule.c.o
+[ 39%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/socketmodule.c.o
+[ 39%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_decimal/_decimal.c.o
+[ 40%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_decimal/libmpdec/basearith.c.o
+[ 40%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_decimal/libmpdec/constants.c.o
+[ 40%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_decimal/libmpdec/context.c.o
+[ 40%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_decimal/libmpdec/convolute.c.o
+[ 41%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_decimal/libmpdec/crt.c.o
+[ 41%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_decimal/libmpdec/difradix2.c.o
+[ 41%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_decimal/libmpdec/fnt.c.o
+[ 41%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_decimal/libmpdec/fourstep.c.o
+[ 41%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_decimal/libmpdec/io.c.o
+[ 42%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_decimal/libmpdec/memory.c.o
+[ 42%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_decimal/libmpdec/mpdecimal.c.o
+/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_decimal/libmpdec/mpdecimal.c:51:0: warning: ignoring #pragma STDC FENV_ACCESS [-Wunknown-pragmas]
+     #pragma STDC FENV_ACCESS ON
+ 
+[ 42%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_decimal/libmpdec/numbertheory.c.o
+[ 42%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_decimal/libmpdec/sixstep.c.o
+[ 43%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_decimal/libmpdec/transpose.c.o
+[ 43%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/pyexpat.c.o
+[ 43%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_elementtree.c.o
+[ 43%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/md5module.c.o
+[ 43%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/sha1module.c.o
+[ 44%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/sha256module.c.o
+[ 44%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/sha512module.c.o
+[ 44%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/binascii.c.o
+[ 44%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_dbmmodule.c.o
+[ 45%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_gdbmmodule.c.o
+[ 45%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/readline.c.o
+[ 45%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_sqlite/cache.c.o
+[ 45%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_sqlite/connection.c.o
+[ 45%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_sqlite/cursor.c.o
+[ 46%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_sqlite/microprotocols.c.o
+[ 46%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_sqlite/module.c.o
+[ 46%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_sqlite/prepare_protocol.c.o
+[ 46%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_sqlite/row.c.o
+[ 47%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_sqlite/statement.c.o
+[ 47%] Building C object CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build/ges-git/src/ges-git/build/python/src/Python-3.5.2/Modules/_sqlite/util.c.o
+[ 47%] Linking C executable _freeze_importlib
+CMakeFiles/_freeze_importlib.dir/__/__/CMakeFiles/config.c.o:(.data+0x21c): undefined reference to `PyInit_dbm'
+CMakeFiles/_freeze_importlib.dir/__/__/CMakeFiles/config.c.o:(.data+0x224): undefined reference to `PyInit_gdbm'
+collect2: error: ld returned 1 exit status
+make[5]: *** [CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/build.make:5502: CMakeBuild/libpython/_freeze_importlib] Error 1
+make[4]: *** [CMakeFiles/Makefile2:1358: CMakeBuild/libpython/CMakeFiles/_freeze_importlib.dir/all] Error 2
+make[3]: *** [Makefile:139: all] Error 2
+make[2]: *** [CMakeFiles/python.dir/build.make:111: python/src/python-stamp/python-build] Error 2
+make[1]: *** [CMakeFiles/Makefile2:68: CMakeFiles/python.dir/all] Error 2
+make: *** [Makefile:128: all] Error 2
+==> ERROR: A failure occurred in build().
+    Aborting...
+==> ERROR: Build failed, check /home/mikeyd/chroot_i686/mikeyd/build
