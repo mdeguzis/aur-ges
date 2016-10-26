@@ -9,7 +9,7 @@ pkgdesc="Multiplayer Only FPS. A recreation of GoldenEye64 as a Half-Life 2 mod 
 arch=('i686')
 url="https://www.geshl2.com/"
 license=('GPLv3')
-makedepends=('cmake' 'boost-libs' 'boost' 'gcc' 'glibc' 'libstdc++5')
+makedepends=('cmake' 'boost-libs' 'boost' 'git' 'gcc' 'glibc' 'libstdc++5')
 source=('ges-git::git+https://github.com/ElectricPrism/ges-code.git'
 				'python::git+https://github.com/python-cmake-buildsystem/python-cmake-buildsystem.git')
 sha256sums=('SKIP'
