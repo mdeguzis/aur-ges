@@ -1,4 +1,4 @@
-# Maintainer: Electric Prism <electricprism@gmail.com>
+# Maintainer: Michael DeGuzis <mdeguzis@gmail.com>
 
 pkgname=ges-git
 pkgver=5.0.99
