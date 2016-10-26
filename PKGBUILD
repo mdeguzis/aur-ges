@@ -7,8 +7,7 @@ pkgdesc="Multiplayer Only FPS. A recreation of GoldenEye64 as a Half-Life 2 mod 
 arch=('i686')
 url="https://www.geshl2.com/"
 license=('GPLv3')
-makedepends=('cmake' 'boost-libs' 'boost' 'git' 'gcc' 
-	     'glibc' 'libstdc++5' 'zlib')
+makedepends=('cmake' 'boost-libs' 'boost' 'git' 'gcc' 'glibc' 'libstdc++5')
 source=('ges-git::git+https://github.com/goldeneye-source/ges-code.git'
 	'python::git+https://github.com/python-cmake-buildsystem/python-cmake-buildsystem.git')
 sha256sums=('SKIP'
@@ -24,6 +23,13 @@ pkgver() {
 }
 prepare()
 {
+
+  # Possible conflicts with system libs?
+  echo "set(USE_SYSTEM_ZLIB OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgdir/cmake/ges_python.cmake"
+  echo "set(USE_SYSTEM_SQLITE3 OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgdir/cmake/ges_python.cmake"
+
+  # output ges_python.cmake for build log
+  cat "$srcdir/$pkgdir/cmake/ges_python.cmake"
 
   # Enter Package Source
   cd "${pkgname}"
