@@ -57,5 +57,7 @@ package()
 {
 
 	# TODO
-
+	cd "${srcdir}/${pkgname}/build"
+	install -m 755 client.so "${pkgdir}"/usr/bin/
+	install -m 755 server.so "${pkgdir}"/usr/bin/
 }
