@@ -45,7 +45,11 @@ build()
 {
 
   cd "${pkgname}/build"
-  cmake -DCMAKE_INSTALL_PREFIX=${HOME}/.local/share/Steam/steamapps/sourcemods/gesource ..
+  cmake \
+  	-DCMAKE_INSTALL_PREFIX=${HOME}/.local/share/Steam/steamapps/sourcemods/gesource \
+	USE_SYSTEM_EXPAT=OFF \
+	USE_SYSTEM_ZLIB=OFF \
+	..
   make
   make DESTDIR="${pkgdir}" install
 
