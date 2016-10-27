@@ -28,7 +28,6 @@ prepare()
   #echo "set(ENABLE_ZLIB OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgname/cmake/ges_python.cmake"
   #echo "set(ENABLE_SQLITE3 OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgname/cmake/ges_python.cmake"
   #echo "set(ENABLE_GDBM OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgname/cmake/ges_python.cmake"
-  echo "set(USE_SYSTEM_READLINE OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgname/cmake/ges_python.cmake"
 
   # Enter Package Source
   cd "${pkgname}"
