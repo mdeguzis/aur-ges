@@ -1,4 +1,5 @@
 # Maintainer: Michael DeGuzis <mdeguzis@gmail.com>
+# Upstream: https://github.com/goldeneye-source/ges-code.git
 
 pkgname=ges-git
 pkgver=5.0.99
@@ -8,7 +9,7 @@ arch=('i686')
 url="https://www.geshl2.com/"
 license=('GPLv3')
 makedepends=('cmake' 'curl' 'boost-libs' 'boost' 'git' 'gcc' 'glibc' 'libstdc++5')
-source=('ges-git::git+https://github.com/goldeneye-source/ges-code.git'
+source=('ges-git::git+https://github.com/professorkaos64/ges-code.git'
 	'python::git+https://github.com/python-cmake-buildsystem/python-cmake-buildsystem.git')
 sha256sums=('SKIP'
 	    'SKIP')
