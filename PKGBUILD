@@ -19,12 +19,15 @@ sha256sums=('SKIP'
 provides=('ges-git')
 conflicts=('ges')
 
-pkgver() {
+# disable pkgver until build fixed so git pull doesn't clash with local build tests
 
-  cd "${pkgname}"
-  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+#pkgver() {
+#
+#  cd "${pkgname}"
+#  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 
-}
+#}
+
 prepare()
 {
 
