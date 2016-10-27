@@ -1,5 +1,7 @@
 # Maintainer: Michael DeGuzis <mdeguzis@gmail.com>
 # Upstream: https://github.com/goldeneye-source/ges-code.git
+# The second line of makedepends was added to satisfy deps needed by
+# the original python/python-boost build upstream
 
 pkgname=ges-git
 pkgver=5.0.99
@@ -8,7 +10,8 @@ pkgdesc="Multiplayer Only FPS. A recreation of GoldenEye64 as a Half-Life 2 mod 
 arch=('i686')
 url="https://www.geshl2.com/"
 license=('GPLv3')
-makedepends=('cmake' 'curl' 'boost-libs' 'boost' 'git' 'gcc' 'glibc' 'libstdc++5')
+makedepends=('cmake' 'curl' 'boost-libs' 'boost' 'git' 'gcc' 'glibc' 'libstdc++5' 
+	     'python' 'bzip2' 'expat' 'zlib')
 source=('ges-git::git+https://github.com/professorkaos64/ges-code.git'
 	'python::git+https://github.com/python-cmake-buildsystem/python-cmake-buildsystem.git')
 sha256sums=('SKIP'
