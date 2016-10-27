@@ -7,7 +7,7 @@ pkgdesc="Multiplayer Only FPS. A recreation of GoldenEye64 as a Half-Life 2 mod 
 arch=('i686')
 url="https://www.geshl2.com/"
 license=('GPLv3')
-makedepends=('cmake' 'boost-libs' 'boost' 'git' 'gcc' 'glibc' 'libstdc++5')
+makedepends=('cmake' 'curl' 'boost-libs' 'boost' 'git' 'gcc' 'glibc' 'libstdc++5')
 source=('ges-git::git+https://github.com/goldeneye-source/ges-code.git'
 	'python::git+https://github.com/python-cmake-buildsystem/python-cmake-buildsystem.git')
 sha256sums=('SKIP'
@@ -25,11 +25,14 @@ prepare()
 {
 
   # Possible conflicts with system libs?
-  echo "set(USE_SYSTEM_ZLIB OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgname/cmake/ges_python.cmake"
-  echo "set(USE_SYSTEM_SQLITE3 OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgname/cmake/ges_python.cmake"
+  echo "set(ENABLE_ZLIB OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgname/cmake/ges_python.cmake"
+  echo "set(ENABLE_SQLITE3 OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgname/cmake/ges_python.cmake"
 
-  # output ges_python.cmake for build log
-  cat "$srcdir/$pkgname/cmake/ges_python.cmake"
+  # TEMP ONLY: output ges_python.cmake for build log
+  # Sent to pastebin to review later since we are building from a chroot
+  cat "$srcdir/$pkgname/cmake/ges_python.cmake" | curl -F 'sprunge=<-' http://sprunge.us
+  cat "$srcdir/$pkgname/build/CMakeCache.txt" | curl -F 'sprunge=<-' http://sprunge.us
+  cat "$srcdir/$pkgname/build/python/src/python-build/CMakeCache.txt" | curl -F 'sprunge=<-' http://sprunge.us
 
   # Enter Package Source
   cd "${pkgname}"
@@ -54,7 +57,7 @@ build()
   cd "${pkgname}/build"
 
   cmake -DCMAKE_INSTALL_PREFIX=${HOME}/.local/share/Steam/steamapps/sourcemods/gesource	..
-  make
+  make VERBOSE=1
   make DESTDIR="${pkgdir}" install
 
 }
