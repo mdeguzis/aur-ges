@@ -27,7 +27,8 @@ prepare()
   # Possible conflicts with system libs?
   #echo "set(ENABLE_ZLIB OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgname/cmake/ges_python.cmake"
   #echo "set(ENABLE_SQLITE3 OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgname/cmake/ges_python.cmake"
-  echo "set(ENABLE_GDBM OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgname/cmake/ges_python.cmake"
+  #echo "set(ENABLE_GDBM OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgname/cmake/ges_python.cmake"
+  echo "set(USE_SYSTEM_READLINE OFF CACHE INTERNAL \"\")" >> "$srcdir/$pkgname/cmake/ges_python.cmake"
 
   # Enter Package Source
   cd "${pkgname}"
@@ -48,12 +49,6 @@ prepare()
 
 build()
 {
-
-  # TEMP ONLY: output ges_python.cmake for build log
-  # Sent to pastebin to review later since we are building from a chroot
-  cat "$srcdir/$pkgname/cmake/ges_python.cmake" | curl -F 'sprunge=<-' http://sprunge.us
-  cat "$srcdir/$pkgname/build/CMakeCache.txt" | curl -F 'sprunge=<-' http://sprunge.us
-  cat "$srcdir/$pkgname/build/python/src/python-build/CMakeCache.txt" | curl -F 'sprunge=<-' http://sprunge.us
 
   cd "${pkgname}/build"
 
