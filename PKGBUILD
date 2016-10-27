@@ -1,5 +1,10 @@
 # Maintainer: Michael DeGuzis <mdeguzis@gmail.com>
 # Upstream: https://github.com/goldeneye-source/ges-code.git
+
+# This is a fork to work around linking issues with python/python-boost on Arch
+# Linux systems. Currently, this PKGBUILD uses system python/python-boost.
+# It is unknown, until further testing, what impact this will have.
+
 # The second line of makedepends was added to satisfy deps needed by
 # the original python/python-boost build upstream
 
