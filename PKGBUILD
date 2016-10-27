@@ -65,7 +65,6 @@ build()
 
   cmake -DCMAKE_INSTALL_PREFIX=${HOME}/.local/share/Steam/steamapps/sourcemods/gesource	..
   make VERBOSE=1
-  make DESTDIR="${pkgdir}" install
 
 }
 
@@ -74,7 +73,9 @@ package()
 
   # TODO
   cd "${srcdir}/${pkgname}/build"
-  install -m 755 client.so "${pkgdir}"/usr/bin/
-  install -m 755 server.so "${pkgdir}"/usr/bin/
+  make DESTDIR="${pkgdir}" install
+  
+  #install -m 755 client.so "${pkgdir}"/usr/bin/
+  #install -m 755 server.so "${pkgdir}"/usr/bin/
 
 }
